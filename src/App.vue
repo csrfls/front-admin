@@ -3,7 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 
 async function hello() {
-  const data = await fetch('/api')
+  const data = await fetch('http://localhost:3000/api')
     .then(response => response.text())
     .then(text => console.log(text))
 }
